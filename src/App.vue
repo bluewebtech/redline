@@ -16,6 +16,7 @@ export default {
     onQuestion(question) {
       if (question === 'Sort') {
         const prices = '[{"name":"eggs","price":1},{"name":"coffee","price":9.99},{"name":"rice","price":4.04}]';
+        // const prices = '[{"name":"eggs","price":1},{"name":"pizza","price":1},{"name":"coffee","price":9.99},{"name":"rice","price":4.04}]';
         const sort = new Sort;
         console.log(sort.sortByPriceAscending(prices));
       }
