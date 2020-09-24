@@ -1,6 +1,7 @@
 <script>
 import Anchor from './Anchor';
 import Double from './Double';
+import Form from './Form';
 import Sort from './Sort';
 
 export default {
@@ -29,6 +30,10 @@ export default {
         const anchor = new Anchor;
         anchor.updateATag('https://www.google.com/', 'https://www.w3schools.com/');
       }
+
+      if (question === 'Form') {
+        new Form;
+      }
     },
   },
 }
@@ -39,6 +44,7 @@ export default {
     <button @click="onQuestion('Sort')" v-text="'Sort'"/>
     <button @click="onQuestion('Double')" v-text="'Double'"/>
     <button @click="onQuestion('Anchor')" v-text="'Anchor'"/>
+    <button @click="onQuestion('Form')" v-text="'Form'"/>
   </div>
 </template>
 
